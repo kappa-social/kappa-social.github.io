@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAPPA-SOCIAL — Asociație Obștească | Chișinău, Moldova</title>
+<meta name="description" content="KAPPA-SOCIAL este o asociație obștească din Moldova care implementează proiecte pilot de impact civic, cultural și comunitar. Proiect activ: Buiucanii Vechi 2.0.">
+<meta name="keywords" content="KAPPA-SOCIAL, ONG Moldova, Buiucanii Vechi, advocacy civic, regenerare urbana, Chisinau, nonprofit Moldova, transparenta institutionala, pârâul Durlești, CINEMALIGA">
+<meta name="robots" content="index, follow">
+<meta name="author" content="KAPPA-SOCIAL A.O.">
+<meta property="og:title" content="KAPPA-SOCIAL — Asociație Obștească">
+<meta property="og:description" content="Proiecte pilot cu impact civic, cultural și comunitar în Moldova.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kappa-social.org">
+<meta property="og:locale" content="ro_MD">
+<link rel="canonical" href="https://kappa-social.org">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NGO","name":"KAPPA-SOCIAL","alternateName":"KAPPA-SOCIAL Asociație Obștească","url":"https://kappa-social.org","description":"Asociație obștească din Moldova care implementează proiecte pilot de impact civic, cultural și comunitar.","foundingDate":"2012","taxID":"1012620002361","address":{"@type":"PostalAddress","streetAddress":"str. Nicolae H. Costin 63/5 ap. 22","addressLocality":"Chișinău","postalCode":"MD-2071","addressCountry":"MD"},"contactPoint":{"@type":"ContactPoint","email":"kappa.social.ngo@gmail.com","telephone":"+37360147147","contactType":"general"},"sameAs":["https://www.facebook.com/kappa.social","https://www.facebook.com/buiucanii.vechi.2.0","https://www.facebook.com/cinemaliga"]}
+</script>
+<style>
+:root{--navy:#1B263B;--navy-dk:#18223A;--gold:#BC8438;--emerald:#2D6A4F;--em-lt:#E1F5EE;--white:#FFFFFF;--off-wh:#F8F7F4;--gray-lt:#F1EFE8;--gray:#888780;--gray-dk:#444441;--text:#2C2C2A;--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--r:8px;--shadow:0 2px 16px rgba(27,38,59,.08)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--white);line-height:1.7}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+header{background:var(--navy-dk);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.07)}
+.hi{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.lw{display:flex;align-items:center;gap:10px;cursor:pointer}
+.lm{width:40px;height:40px;background:var(--gold);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:19px;font-weight:700;color:var(--navy-dk);letter-spacing:-1px;flex-shrink:0}
+.lt{color:var(--white);font-size:14px;font-weight:600;letter-spacing:.4px}
+.ls{color:rgba(255,255,255,.4);font-size:11px}
+nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+nav a{color:rgba(255,255,255,.7);font-size:12.5px;font-weight:400;padding:5px 9px;border-radius:6px;transition:color .15s,background .15s;cursor:pointer}
+nav a:hover{color:var(--white);background:rgba(255,255,255,.08)}
+nav a.active{color:var(--gold)}
+.lang-sw{display:flex;gap:4px;margin-left:10px}
+.lb{font-size:11px;font-weight:600;color:rgba(255,255,255,.35);cursor:pointer;padding:3px 6px;border-radius:4px;border:1px solid rgba(255,255,255,.1);transition:all .15s}
+.lb.active,.lb:hover{color:var(--white);border-color:rgba(255,255,255,.4)}
+.mtog{display:none;background:none;border:none;cursor:pointer;color:white;padding:4px}
+section{display:none}
+section.active{display:block}
+.hero{background:var(--navy-dk);padding:80px 24px 72px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'sk';position:absolute;bottom:-80px;right:-60px;font-family:var(--serif);font-size:360px;font-weight:700;color:rgba(188,132,56,.04);line-height:1;pointer-events:none;user-select:none}
+.eyb{display:inline-block;background:rgba(45,106,79,.2);color:#6ECFA3;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:100px;margin-bottom:24px;border:1px solid rgba(45,106,79,.35)}
+.hero h1{font-family:var(--serif);font-size:clamp(32px,5vw,58px);color:var(--white);font-weight:700;line-height:1.15;max-width:680px;margin:0 auto 20px}
+.hero h1 span{color:var(--gold)}
+.hero>p{font-size:17px;color:rgba(255,255,255,.6);max-width:520px;margin:0 auto 36px;font-weight:300;line-height:1.75}
+.ha{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.bp{background:var(--gold);color:var(--navy-dk);font-size:13px;font-weight:600;padding:11px 24px;border-radius:var(--r);transition:opacity .15s;cursor:pointer;border:none}
+.bp:hover{opacity:.88}
+.bo{background:transparent;color:var(--white);font-size:13px;font-weight:500;padding:11px 24px;border-radius:var(--r);border:1px solid rgba(255,255,255,.3);transition:border-color .15s,background .15s;cursor:pointer}
+.bo:hover{border-color:var(--white);background:rgba(255,255,255,.05)}
+.sbar{background:var(--white);border-bottom:1px solid var(--gray-lt);padding:24px}
+.si{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.sn{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--navy);line-height:1}
+.sn span{color:var(--gold)}
+.sl{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.8px;margin-top:5px}
+.ph{background:var(--navy-dk);padding:52px 24px 48px}
+.phi{max-width:760px;margin:0 auto}
+.pe{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.ph h2{font-family:var(--serif);font-size:clamp(26px,4vw,44px);color:var(--white);font-weight:700;line-height:1.2;margin-bottom:14px}
+.ph p{font-size:16px;color:rgba(255,255,255,.6);font-weight:300;line-height:1.7}
+.con{max-width:1100px;margin:0 auto;padding:56px 24px}
+.conn{max-width:760px;margin:0 auto;padding:56px 24px}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:36px}
+.card{background:var(--off-wh);border-radius:12px;padding:24px;border:1px solid var(--gray-lt);transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.ci{width:40px;height:40px;border-radius:var(--r);background:var(--em-lt);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:20px}
+.card h3{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.card p{font-size:13px;color:var(--gray-dk);line-height:1.65}
+.pmc{background:var(--navy-dk);border-radius:12px;padding:36px;color:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin-bottom:20px}
+.pmc h3{font-family:var(--serif);font-size:26px;font-weight:700;margin-bottom:10px}
+.pmc>div>p{font-size:14px;color:rgba(255,255,255,.68);line-height:1.7;margin-bottom:14px}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.7px;text-transform:uppercase;padding:3px 9px;border-radius:100px;margin-right:5px;margin-bottom:6px}
+.tg{background:rgba(45,106,79,.2);color:#6ECFA3;border:1px solid rgba(45,106,79,.3)}
+.tgo{background:rgba(188,132,56,.15);color:var(--gold);border:1px solid rgba(188,132,56,.25)}
+.tgr{background:rgba(255,255,255,.07);color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.12)}
+.pm{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.me{background:rgba(255,255,255,.06);border-radius:var(--r);padding:14px}
+.mn{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold)}
+.ml{font-size:11px;color:rgba(255,255,255,.45);margin-top:3px}
+.hg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.hc{background:var(--off-wh);border-radius:10px;padding:20px;border:1px solid var(--gray-lt);border-left:3px solid var(--gold)}
+.hy{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px}
+.hc h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.hc p{font-size:13px;color:var(--gray-dk);line-height:1.6}
+.hbadge{display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;border-radius:100px;margin-top:8px;background:var(--em-lt);color:var(--emerald)}
+.sl2{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--emerald);margin-bottom:10px}
+.st{font-family:var(--serif);font-size:clamp(22px,3.5vw,36px);color:var(--navy);font-weight:700;line-height:1.25}
+.ss{font-size:15px;color:var(--gray-dk);max-width:560px;margin-top:10px;line-height:1.7}
+.divx{width:44px;height:3px;background:var(--gold);border-radius:2px;margin:16px 0}
+.tt{width:100%;border-collapse:collapse;margin-top:24px;font-size:13px}
+.tt th{text-align:left;padding:10px 14px;background:var(--navy);color:var(--white);font-size:10px;font-weight:600;letter-spacing:.8px;text-transform:uppercase}
+.tt td{padding:12px 14px;border-bottom:1px solid var(--gray-lt);vertical-align:top}
+.tt tr:hover td{background:var(--off-wh)}
+.sb{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:100px}
+.s-t{background:#E6F1FB;color:#185FA5}
+.s-p{background:#EAF3DE;color:#3B6D11}
+.s-a{background:#FAEEDA;color:#854F0B}
+.s-s{background:#FAECE7;color:#993C1D}
+.s-r{background:#EAF3DE;color:#3B6D11}
+.plrs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px}
+.plr{border-left:3px solid var(--emerald);padding:16px 16px 16px 18px;background:var(--off-wh);border-radius:0 var(--r) var(--r) 0}
+.pn{font-size:10px;font-weight:700;color:var(--emerald);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.plr h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:5px}
+.plr p{font-size:12px;color:var(--gray-dk);line-height:1.6}
+.tl{margin-top:28px}
+.tli{display:flex;gap:16px;margin-bottom:24px}
+.tdw{display:flex;flex-direction:column;align-items:center}
+.td{width:12px;height:12px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:4px}
+.tline{width:2px;background:var(--gray-lt);flex:1;margin-top:4px}
+.tdate{font-size:11px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.7px;margin-bottom:3px}
+.tttl{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.ttxt{font-size:13px;color:var(--gray-dk);line-height:1.65}
+.cong{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.cit{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px}
+.cico{width:38px;height:38px;border-radius:var(--r);background:var(--em-lt);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.clb{font-size:10px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:.8px}
+.cv{font-size:14px;color:var(--navy);font-weight:500;margin-top:2px}
+.cv a{color:var(--emerald)}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:12px;font-weight:500;color:var(--navy);margin-bottom:5px}
+.fg input,.fg textarea,.fg select{width:100%;padding:10px 12px;border:1px solid #D3D1C7;border-radius:var(--r);font-family:var(--sans);font-size:13px;color:var(--text);background:var(--white);transition:border-color .15s}
+.fg input:focus,.fg textarea:focus,.fg select:focus{outline:none;border-color:var(--navy)}
+.fg textarea{resize:vertical;min-height:100px}
+.fnote{font-size:11px;color:var(--gray);margin-top:6px;line-height:1.5}
+.pk{background:var(--off-wh);border-radius:12px;padding:22px;border:1px solid var(--gray-lt);margin-bottom:14px}
+.pk h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.pk p{font-size:13px;color:var(--gray-dk);line-height:1.65;margin-bottom:10px}
+.pkb{display:inline-block;background:var(--navy);color:var(--white);font-size:11px;font-weight:600;padding:6px 12px;border-radius:var(--r);margin-right:6px;margin-top:3px;cursor:pointer;transition:opacity .15s}
+.pkb:hover{opacity:.85}
+.pkb.sec{background:var(--off-wh);color:var(--navy);border:1px solid var(--gray-lt)}
+.ll{background:var(--off-wh);border-radius:12px;padding:22px;border:1px solid var(--gray-lt);margin-bottom:14px}
+.ll-ico{font-size:22px;margin-bottom:8px}
+.ll h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.ll p{font-size:13px;color:var(--gray-dk);line-height:1.65}
+.llt{display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;border-radius:100px;margin-right:4px;margin-top:6px}
+.llw{background:#FAEEDA;color:#854F0B}
+.llok{background:#EAF3DE;color:#3B6D11}
+.llt2{background:#E6F1FB;color:#185FA5}
+.fa{background:var(--white);border:1px solid var(--gray-lt);border-radius:10px;padding:16px;margin-bottom:12px}
+.fa-date{font-size:11px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.7px;margin-bottom:4px}
+.fa h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:5px}
+.fa p{font-size:12px;color:var(--gray-dk);line-height:1.6}
+.ccg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.cc{background:var(--white);border:1px solid var(--gray-lt);border-radius:10px;padding:20px}
+.cc h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.cc p{font-size:13px;color:var(--gray-dk);line-height:1.6}
+.ccl{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--emerald);margin-top:10px}
+.ibox{background:var(--em-lt);border-radius:var(--r);padding:14px 18px;border-left:3px solid var(--emerald);margin:16px 0;font-size:13px;color:#0F6E56;line-height:1.65}
+.wbox{background:#FAEEDA;border-radius:var(--r);padding:14px 18px;border-left:3px solid #BA7517;margin:14px 0;font-size:13px;color:#633806;line-height:1.65}
+.prn{margin-top:32px}
+.pri{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--gray-lt);align-items:flex-start}
+.pri:last-child{border-bottom:none}
+.pin{width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--serif)}
+.pri h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.pri p{font-size:13px;color:var(--gray-dk);line-height:1.65}
+.uf{border-left:2px solid var(--gray-lt);padding-left:20px;margin-top:20px}
+.ui{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--gray-lt)}
+.ui:last-child{border-bottom:none}
+.ud{font-size:11px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.7px;margin-bottom:3px}
+.ui h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.ui p{font-size:13px;color:var(--gray-dk);line-height:1.6}
+.utag{display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;border-radius:100px;margin-top:5px}
+footer{background:var(--navy-dk);padding:48px 24px 28px;color:rgba(255,255,255,.45)}
+.fi{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.ftag{font-size:13px;line-height:1.65;max-width:240px;margin-top:12px}
+.fc h5{color:var(--white);font-size:12px;font-weight:600;margin-bottom:12px;letter-spacing:.3px}
+.fc a{display:block;font-size:12px;color:rgba(255,255,255,.45);margin-bottom:7px;transition:color .15s;cursor:pointer}
+.fc a:hover{color:var(--white)}
+.fb{max-width:1100px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;font-size:11px;flex-wrap:wrap;gap:6px}
+.fleg{color:rgba(255,255,255,.3)}
+.fidn{color:rgba(255,255,255,.2);font-family:'Courier New',monospace}
+@media(max-width:900px){nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--navy-dk);padding:10px;z-index:200}.mtog{display:block}.si{grid-template-columns:repeat(2,1fr)}.pmc{grid-template-columns:1fr}.cong{grid-template-columns:1fr}.fi{grid-template-columns:1fr 1fr}.lang-sw{display:none}}
+@media(max-width:480px){.si{grid-template-columns:1fr 1fr}.hero{padding:52px 16px 48px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="hi">
+  <div class="lw" onclick="showPage('home')">
+    <div class="lm">sk</div>
+    <div><div class="lt">KAPPA-SOCIAL</div><div class="ls">Asociație Obștească</div></div>
+  </div>
+  <nav id="mnav">
+    <a onclick="showPage('home')" class="active">Acasă</a>
+    <a onclick="showPage('about')">Despre</a>
+    <a onclick="showPage('projects')">Proiecte</a>
+    <a onclick="showPage('bv20')">BV 2.0</a>
+    <a onclick="showPage('transparency')">Transparență</a>
+    <a onclick="showPage('press')">Presă</a>
+    <a onclick="showPage('community')">Comunitate</a>
+    <a onclick="showPage('lessons')">Lecții</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px">
+    <div class="lang-sw">
+      <div class="lb active" onclick="setLang('ro',event)">RO</div>
+      <div class="lb" onclick="setLang('ru',event)">RU</div>
+      <div class="lb" onclick="setLang('en',event)">EN</div>
+    </div>
+    <button class="mtog" onclick="toggleMenu()" aria-label="Meniu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect y="3" width="20" height="2" rx="1" fill="white"/><rect y="9" width="20" height="2" rx="1" fill="white"/><rect y="15" width="20" height="2" rx="1" fill="white"/></svg>
+    </button>
+  </div>
+</div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="active">
+<div class="hero">
+  <div class="eyb">Chișinău · Moldova · Fondată 2012</div>
+  <h1>Transformăm probleme în <span>soluții replicabile</span></h1>
+  <p>KAPPA-SOCIAL implementează proiecte pilot cu impact civic, cultural și comunitar. Testăm ce funcționează, documentăm tot, și lăsăm modele pe care alții le pot urma.</p>
+  <div class="ha">
+    <button class="bp" onclick="showPage('projects')">Proiectele noastre</button>
+    <button class="bo" onclick="showPage('bv20')">Proiect activ: BV 2.0</button>
+  </div>
+</div>
+<div class="sbar">
+  <div class="si">
+    <div><div class="sn">833<span>k</span></div><div class="sl">Vizualizări BV 2.0 (6 luni)</div></div>
+    <div><div class="sn">2012</div><div class="sl">Anul fondării</div></div>
+    <div><div class="sn">3</div><div class="sl">Proiecte în portofoliu</div></div>
+    <div><div class="sn">10<span>+</span></div><div class="sl">Instituții contactate</div></div>
+  </div>
+</div>
+<div class="con">
+  <div style="text-align:center;margin-bottom:44px">
+    <div class="sl2">Ce suntem</div>
+    <div class="st">O platformă de proiecte pilot</div>
+    <div class="ss" style="margin:10px auto 0">Nu suntem o organizație cu un singur scop. Suntem o platformă care construiește și testează modele de impact în domenii diferite — civic, cultural, patrimoniu, comunitar.</div>
+  </div>
+  <div class="cg">
+    <div class="card"><div class="ci">🧪</div><h3>Proiecte pilot diverse</h3><p>Civic, cultural, patrimoniu, comunitar. Fiecare proiect are propria identitate și audiență — KAPPA-SOCIAL e umbrela, nu o singură cauză.</p></div>
+    <div class="card"><div class="ci">📋</div><h3>Transparență totală</h3><p>Corespondența cu autoritățile, bugetele, rezultatele — toate publice. Nu avem informații ascunse față de comunitate sau finanțatori.</p></div>
+    <div class="card"><div class="ci">🔄</div><h3>Model replicabil</h3><p>Documentăm și eșecurile. Un ghid viu pentru organizații și comunități care vor să urmeze o cale similară.</p></div>
+  </div>
+</div>
+<div style="background:var(--off-wh);padding:52px 24px;border-top:1px solid var(--gray-lt)">
+  <div style="max-width:1100px;margin:0 auto">
+    <div class="sl2">Proiect flagman activ</div>
+    <div class="st" style="max-width:560px">Buiucanii Vechi 2.0</div>
+    <div class="divx"></div>
+    <p style="font-size:15px;color:var(--gray-dk);max-width:600px;line-height:1.75;margin-bottom:24px">Advocacy civic, regenerare urbană și coagulare comunitară în cartierul Buiucanii Vechi, Chișinău. 833k vizualizări Facebook în 6 luni. Inspecție oficială IPM realizată mai 2026.</p>
+    <button class="bp" onclick="showPage('bv20')">Descoperă proiectul →</button>
+  </div>
+</div>
+</section>
+
+<!-- DESPRE -->
+<section id="about">
+<div class="ph"><div class="phi">
+  <div class="pe">Despre KAPPA-SOCIAL</div>
+  <h2>O platformă de proiecte,<br>nu un proiect unic</h2>
+  <p>Fondată în 2012, KAPPA-SOCIAL este umbrela instituțională sub care se dezvoltă proiecte pilot în domenii diverse — civic, cultural, patrimoniu, comunitar. Fiecare proiect are propria identitate. ONG-ul asigură cadrul legal și metodologic.</p>
+</div></div>
+<div class="conn">
+  <div class="sl2">Misiunea</div>
+  <div class="st">De ce existăm</div>
+  <div class="divx"></div>
+  <p style="font-size:15px;line-height:1.8;color:var(--gray-dk);margin-bottom:14px">KAPPA-SOCIAL există pentru a demonstra că cetățenii obișnuiți, cu instrumentele corecte și o abordare sistematică, pot construi comunități active, pot responsabiliza instituțiile și pot lăsa modele funcționale pentru alții.</p>
+  <p style="font-size:15px;line-height:1.8;color:var(--gray-dk)">Nu suntem o organizație de protest. Suntem o organizație de impact măsurabil.</p>
+
+  <div style="margin-top:44px">
+    <div class="sl2">Principii</div>
+    <div class="st">Cum lucrăm</div>
+    <div class="prn">
+      <div class="pri"><div class="pin">1</div><div><h4>Apolitici absolut</h4><p>Nu susținem și nu criticăm niciun partid. Problemele comunitare sunt ale cetățeanului, indiferent de culoarea politică a administrației.</p></div></div>
+      <div class="pri"><div class="pin">2</div><div><h4>Comunicare legal-safe</h4><p>Fapte documentate, surse citate. Formularea corectă: „Am solicitat X la data Y. La termenul Z nu am primit răspuns." — nu acuzații fără dovezi.</p></div></div>
+      <div class="pri"><div class="pin">3</div><div><h4>Transparență totală</h4><p>Fiecare demers, fiecare răspuns sau termen depășit — publicat. Bugetele proiectelor finanțate se publică integral.</p></div></div>
+      <div class="pri"><div class="pin">4</div><div><h4>Documentăm și eșecurile</h4><p>Ce nu a funcționat se spune la fel de clar ca ce a funcționat. Credibilitatea se construiește prin onestitate, nu prin PR.</p></div></div>
+      <div class="pri"><div class="pin">5</div><div><h4>Diversitate de proiecte</h4><p>KAPPA-SOCIAL nu este definit de un singur proiect. Fiecare proiect are propria identitate — ONG-ul e platforma, nu marca unui singur produs.</p></div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:44px">
+    <div class="sl2">Date juridice</div>
+    <div class="st">Informații oficiale</div>
+    <div style="margin-top:18px;background:var(--off-wh);border-radius:12px;padding:22px;border:1px solid var(--gray-lt)">
+      <table style="width:100%;font-size:13px;border-collapse:collapse">
+        <tr style="border-bottom:1px solid var(--gray-lt)"><td style="padding:8px 0;color:var(--gray);width:42%">Denumire completă</td><td style="padding:8px 0;font-weight:500">„KAPPA-SOCIAL" Asociație Obștească</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-lt)"><td style="padding:8px 0;color:var(--gray)">IDNO</td><td style="padding:8px 0;font-family:'Courier New',monospace;font-weight:600">1012620002361</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-lt)"><td style="padding:8px 0;color:var(--gray)">Înregistrat</td><td style="padding:8px 0">2012 · Statut actualizat 26.01.2024</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-lt)"><td style="padding:8px 0;color:var(--gray)">Domenii</td><td style="padding:8px 0">Comunitar · Mediu · Civic · Transparență · Cultură</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-lt)"><td style="padding:8px 0;color:var(--gray)">Nivel</td><td style="padding:8px 0">Național (conform Statutului) · Focus actual: Chișinău</td></tr>
+        <tr><td style="padding:8px 0;color:var(--gray)">Adresă</td><td style="padding:8px 0">str. Nicolae H. Costin 63/5 ap. 22, MD-2071, Chișinău</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PROIECTE -->
+<section id="projects">
+<div class="ph"><div class="phi">
+  <div class="pe">Portofoliu</div>
+  <h2>Proiecte pilot cu<br>identitate proprie</h2>
+  <p>Fiecare proiect KAPPA-SOCIAL acoperă un domeniu distinct. ONG-ul e umbrela — fiecare proiect are propria audiență, strategie și brand.</p>
+</div></div>
+<div class="con">
+  <div class="sl2">Proiect activ · Flagman</div>
+  <div class="pmc">
+    <div>
+      <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px">
+        <span class="tag tg">Activ 2025–prezent</span>
+        <span class="tag tgo">Civic · Mediu · Comunitar</span>
+      </div>
+      <h3>Buiucanii Vechi 2.0</h3>
+      <p>Advocacy civic, regenerare urbană participativă și coagulare comunitară în cartierul Buiucanii Vechi, Chișinău. Un experiment social replicabil — cum transformi o comunitate indiferentă într-una activă.</p>
+      <p>Problema centrală: Pârâul Durlești — colmatat, poluat, inundații recurente. 7,7 mln MDL cheltuiți în 2020 fără impact documentat tehnic.</p>
+      <button class="bp" style="margin-top:10px" onclick="showPage('bv20')">Pagina completă BV 2.0 →</button>
+    </div>
+    <div class="pm">
+      <div class="me"><div class="mn">833k</div><div class="ml">Vizualizări (6 luni)</div></div>
+      <div class="me"><div class="mn">140k</div><div class="ml">Reach maxim post</div></div>
+      <div class="me"><div class="mn">1054</div><div class="ml">Urmăritori pagină</div></div>
+      <div class="me"><div class="mn">7+</div><div class="ml">Instituții contactate</div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="sl2">Portofoliu complet</div>
+    <div class="st">Proiecte realizate și în pregătire</div>
+    <div class="hg">
+      <div class="hc">
+        <div class="hy">2012 · Finalizat</div>
+        <h4>CINEMALIGA</h4>
+        <p>Primul proiect al KAPPA-SOCIAL. Cinema comunitar — proiecții, dezbateri, animarea spațiului cultural local la Chișinău.</p>
+        <a href="https://www.facebook.com/cinemaliga" target="_blank" style="font-size:12px;color:var(--emerald);font-weight:600;display:inline-block;margin-top:8px">Facebook CINEMALIGA →</a>
+        <div><span class="hbadge">Cultură · Cinema</span></div>
+      </div>
+      <div class="hc" style="border-left-color:var(--emerald)">
+        <div class="hy" style="color:var(--emerald)">2025–prezent · Activ</div>
+        <h4>Buiucanii Vechi 2.0</h4>
+        <p>Proiect flagship de advocacy civic și regenerare comunitară. Cel mai vizibil proiect activ KAPPA-SOCIAL.</p>
+        <button class="bp" style="font-size:11px;padding:5px 10px;margin-top:8px" onclick="showPage('bv20')">Detalii →</button>
+        <div><span class="hbadge" style="background:rgba(45,106,79,.15);color:var(--emerald)">Civic · Mediu · Comunitar</span></div>
+      </div>
+      <div class="hc" style="border-left-color:var(--gray)">
+        <div class="hy" style="color:var(--gray)">2027 · În pregătire</div>
+        <h4>Lacurile Ișnovăț</h4>
+        <p>Proiect pilot de dezvoltare regională bazată pe valorificarea patrimoniului. Lansare planificată din mai 2027.</p>
+        <div style="margin-top:8px"><span class="tag tgr" style="font-size:10px">Patrimoniu · Regional</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;background:var(--navy-dk);border-radius:12px;padding:28px;color:white">
+    <div class="sl2" style="color:rgba(188,132,56,.8)">Important pentru finanțatori și parteneri</div>
+    <div class="st" style="color:white;font-size:22px">KAPPA-SOCIAL ≠ Buiucanii Vechi 2.0</div>
+    <p style="font-size:14px;color:rgba(255,255,255,.65);margin-top:10px;line-height:1.75;max-width:620px">BV 2.0 este cel mai vizibil proiect activ, dar KAPPA-SOCIAL are un portofoliu divers: cultură (CINEMALIGA, 2012), civic-mediu (BV 2.0), patrimoniu (Lacurile Ișnovăț, 2027). Fiecare proiect are propria finanțare și identitate. Aplicăm la granturi în domenii diverse, nu exclusiv mediu sau urbanism.</p>
+  </div>
+</div>
+</section>
+
+<!-- BUIUCANII VECHI 2.0 -->
+<section id="bv20">
+<div class="ph" style="background:#18223A">
+  <div class="phi">
+    <div class="pe">Proiect activ KAPPA-SOCIAL</div>
+    <h2>Buiucanii Vechi 2.0</h2>
+    <p>Cartierul Buiucanii Vechi, Chișinău — de la o comunitate indiferentă la una conștientă, activă și mândră. Advocacy civic, regenerare urbană, transparență instituțională.</p>
+    <div style="margin-top:14px">
+      <a href="https://www.facebook.com/buiucanii.vechi.2.0" target="_blank" style="background:rgba(255,255,255,.1);color:white;padding:7px 14px;border-radius:var(--r);font-size:12px;font-weight:500;display:inline-block">Facebook BV 2.0 →</a>
+    </div>
+  </div>
+</div>
+<div class="con">
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:32px;align-items:start">
+    <div>
+      <div class="sl2">Actualizări recente</div>
+      <div class="st">Ce s-a întâmplat</div>
+      <div class="uf">
+        <div class="ui">
+          <div class="ud">25 Mai 2026</div>
+          <h4>Inspecție oficială IPM — prima victorie concretă</h4>
+          <p>Inspectoratul pentru Protecția Mediului a efectuat inspecție la pas pe 1,5 km — Pârâul Durlești + Pârâul Sfânta Vineri — alături de echipa BV 2.0 și membrii comunității.</p>
+          <span class="utag" style="background:#EAF3DE;color:#3B6D11">Victorie</span>
+        </div>
+        <div class="ui">
+          <div class="ud">Martie 2026</div>
+          <h4>Sesizare depusă la IPM</h4>
+          <p>Sesizare oficială privind deversările ilegale în Pârâul Durlești. Documentată public pe pagina Facebook BV 2.0.</p>
+          <span class="utag" style="background:#E6F1FB;color:#185FA5">Advocacy</span>
+        </div>
+        <div class="ui">
+          <div class="ud">Ianuarie–Februarie 2026</div>
+          <h4>Dosarul Zero — 7 instituții, primele răspunsuri</h4>
+          <p>SA Apă-Canal, Pretura Buiucani, DGAURF, IGSU, Direcția Finanțe PMC — răspunsuri oficiale documentate. Confirmare: 7,7 mln MDL cheltuiți în 2020, zero studii tehnice.</p>
+          <span class="utag" style="background:#FAEEDA;color:#854F0B">Documentare</span>
+        </div>
+        <div class="ui">
+          <div class="ud">Decembrie 2025</div>
+          <h4>Lansarea paginii Facebook BV 2.0</h4>
+          <p>Primele 43 posturi, 390k vizualizări. Post video organic: 140k reach, 0 lei investiți. Comunitatea începe să se coaguleze.</p>
+          <span class="utag" style="background:#E6F1FB;color:#185FA5">Social media</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sl2">Cifre cheie</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+        <div style="background:var(--navy);border-radius:var(--r);padding:14px;text-align:center"><div style="font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold)">833k</div><div style="font-size:10px;color:rgba(255,255,255,.45);margin-top:3px">Views totale</div></div>
+        <div style="background:var(--navy);border-radius:var(--r);padding:14px;text-align:center"><div style="font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold)">140k</div><div style="font-size:10px;color:rgba(255,255,255,.45);margin-top:3px">Reach max</div></div>
+        <div style="background:var(--navy);border-radius:var(--r);padding:14px;text-align:center"><div style="font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold)">1054</div><div style="font-size:10px;color:rgba(255,255,255,.45);margin-top:3px">Urmăritori</div></div>
+        <div style="background:var(--navy);border-radius:var(--r);padding:14px;text-align:center"><div style="font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold)">1.5km</div><div style="font-size:10px;color:rgba(255,255,255,.45);margin-top:3px">Pârâu inspectat</div></div>
+      </div>
+      <div style="margin-top:20px">
+        <div class="sl2">Zona pe hartă</div>
+        <div style="background:var(--off-wh);border-radius:var(--r);overflow:hidden;border:1px solid var(--gray-lt)">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5062!2d28.8197!3d47.0267!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2smd!4v1" width="100%" height="200" style="border:0;display:block" allowfullscreen loading="lazy" title="Harta Buiucanii Vechi"></iframe>
+          <div style="padding:8px 12px;font-size:11px;color:var(--gray)">Buiucanii Vechi, sectorul Buiucani, Chișinău</div>
+        </div>
+      </div>
+      <div style="margin-top:16px;background:var(--em-lt);border-radius:var(--r);padding:12px 14px">
+        <div style="font-size:11px;font-weight:600;color:var(--emerald);margin-bottom:4px">Urmărește live pe Facebook</div>
+        <a href="https://www.facebook.com/buiucanii.vechi.2.0" target="_blank" style="font-size:12px;color:var(--navy);font-weight:500">facebook.com/buiucanii.vechi.2.0</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARHIVA INUNDATII -->
+  <div style="margin-top:52px">
+    <div class="sl2">Arhivă documentară</div>
+    <div class="st">Inundații documentate — Pârâul Durlești</div>
+    <p style="font-size:13px;color:var(--gray-dk);margin-top:8px;max-width:600px;line-height:1.7">Fiecare eveniment documentat cu date, fotografii și impact raportat. Arhiva servește ca probatoriu în demersurile oficiale.</p>
+    <div class="ibox">📌 Ai fotografii sau informații despre inundații în zonă? Scrie-ne la kappa.social.ngo@gmail.com — le includem în arhivă.</div>
+    <div class="fa"><div class="fa-date">Iulie 2025</div><h4>Inundații majore — str. Ghioceilor, Cornului, Dragomirna</h4><p>Subsoluri și parcări inundate. Al doilea eveniment major în 12 luni. Documentat foto + petiții colective.</p><span class="tag tgo" style="font-size:10px">Inundație majoră</span><span class="tag tgr" style="font-size:10px">Fotografii disponibile</span></div>
+    <div class="fa"><div class="fa-date">2024</div><h4>Inundații repetate — zona pârâului Durlești</h4><p>Multiple evenimente. Subsoluri distruse, vehicule avariate. Colmatare confirmată oficial de Pretura Buiucani.</p><span class="tag tgo" style="font-size:10px">Inundație repetată</span></div>
+    <div class="fa"><div class="fa-date">2020</div><h4>Lucrări „curățare" — 7,7 mln MDL cheltuiți</h4><p>PMC alocă 7.721.300 MDL. Ulterior confirmat oficial: zero studii tehnice la dosar. Inundațiile revin în 2024–2025.</p><span class="tag tgr" style="font-size:10px">Document oficial</span><span class="tag tgo" style="font-size:10px">Paradox financiar</span></div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="sl2">Metodologia BV 2.0</div>
+    <div class="st">Cei 6 piloni de acțiune</div>
+    <div class="plrs">
+      <div class="plr"><div class="pn">01</div><h4>Transparență instituțională</h4><p>Orice demers trimis = postare publică. Orice răspuns sau termen depășit = comunicat imediat.</p></div>
+      <div class="plr"><div class="pn">02</div><h4>Identitate comunitară</h4><p>Istoria locală, personajele zonei, mândria de a fi din Buiucanii Vechi — construite sistematic.</p></div>
+      <div class="plr"><div class="pn">03</div><h4>Advocacy fără litigii</h4><p>Sesizări la IPM, CNA, Curtea de Conturi. Presiune prin mass-media și consilieri municipali.</p></div>
+      <div class="plr"><div class="pn">04</div><h4>Comunitate activă</h4><p>Acțiuni de salubrizare, întâlniri de cartier, grupuri de lucru tematice concrete.</p></div>
+      <div class="plr"><div class="pn">05</div><h4>Atractivitate economică</h4><p>Zona să devină interesantă pentru antreprenori, cafenele, investitori în reabilitare.</p></div>
+      <div class="plr"><div class="pn">06</div><h4>Model replicabil</h4><p>Tot ce merge și tot ce nu merge — documentat public pentru alte comunități din Moldova.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TRANSPARENTA -->
+<section id="transparency">
+<div class="ph"><div class="phi">
+  <div class="pe">Transparență</div>
+  <h2>Vedem tot. Publicăm tot.</h2>
+  <p>Fiecare demers trimis autorităților devine public. Fiecare răspuns primit sau termen depășit — comunicat cu dată și număr.</p>
+</div></div>
+<div class="con">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:40px">
+    <div style="background:var(--off-wh);border-radius:var(--r);padding:18px;text-align:center;border:1px solid var(--gray-lt)"><div style="font-family:var(--serif);font-size:32px;font-weight:700;color:var(--navy)">7+</div><div style="font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.7px;margin-top:5px">Instituții contactate</div></div>
+    <div style="background:var(--off-wh);border-radius:var(--r);padding:18px;text-align:center;border:1px solid var(--gray-lt)"><div style="font-family:var(--serif);font-size:32px;font-weight:700;color:var(--emerald)">5+</div><div style="font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.7px;margin-top:5px">Răspunsuri obținute</div></div>
+    <div style="background:var(--off-wh);border-radius:var(--r);padding:18px;text-align:center;border:1px solid var(--gray-lt)"><div style="font-family:var(--serif);font-size:32px;font-weight:700;color:var(--gold)">1</div><div style="font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.7px;margin-top:5px">Sesizare IPM depusă</div></div>
+    <div style="background:var(--off-wh);border-radius:var(--r);padding:18px;text-align:center;border:1px solid var(--gray-lt)"><div style="font-family:var(--serif);font-size:32px;font-weight:700;color:var(--navy)">2025</div><div style="font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.7px;margin-top:5px">De când documentăm</div></div>
+  </div>
+
+  <div class="sl2">Dosarul Zero — BV 2.0</div>
+  <div class="st">Registrul demersurilor oficiale</div>
+  <p style="margin-top:10px;font-size:13px;color:var(--gray-dk);max-width:580px;line-height:1.7">Formula noastră de comunicare: <strong>Faptă → Dovadă → Cerere → Termen → Răspuns → Concluzie.</strong> Tabelul se actualizează după fiecare acțiune nouă.</p>
+  <div style="overflow-x:auto;margin-top:18px">
+  <table class="tt">
+    <thead><tr><th>Instituție</th><th>Subiect</th><th>Data</th><th>Termen</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><strong>SA „Apă-Canal Chișinău"</strong></td><td>% gospodării cu canalizare pe str. riverane</td><td>Ian 2026</td><td>15 zile</td><td><span class="sb s-p">Răspuns primit</span></td></tr>
+      <tr><td><strong>Direcția Finanțe PMC</strong></td><td>Confirmare alocare 7.721.300 MDL — 2020</td><td>Ian 2026</td><td>30 zile</td><td><span class="sb s-r">Confirmat oficial</span></td></tr>
+      <tr><td><strong>Pretura Buiucani</strong></td><td>Date tehnice lucrări curățare pârâu 2020</td><td>Ian 2026</td><td>30 zile</td><td><span class="sb s-p">Răspuns primit</span></td></tr>
+      <tr><td><strong>DGAURF + ÎM Exdrupo</strong></td><td>Date tehnice lucrări 2020</td><td>Ian 2026</td><td>30 zile</td><td><span class="sb s-p">Nu dețin date</span></td></tr>
+      <tr><td><strong>IGSU</strong></td><td>Evaluare risc inundații zona BV</td><td>Feb 2026</td><td>30 zile</td><td><span class="sb s-p">Confirmat risc</span></td></tr>
+      <tr><td><strong>CSP Chișinău — dr. Tudor Puiu</strong></td><td>Status zonă agrement Lac Valea Morilor</td><td>Ian 2026</td><td>—</td><td><span class="sb s-r">Confirmat audio</span></td></tr>
+      <tr><td><strong>IPM</strong></td><td>Sesizare deversări ilegale pârâul Durlești</td><td>Mar 2026</td><td>30 zile</td><td><span class="sb s-s">Sesizare depusă</span></td></tr>
+      <tr><td><strong>IPM + KAPPA-SOCIAL (teren)</strong></td><td>Inspecție la pas 1,5 km — Durlești + Sfânta Vineri</td><td>25 mai 2026</td><td>—</td><td><span class="sb s-r">Realizat ✓</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="ibox">Ai sesizat o problemă în zonă? Scrie-ne — o includem în dosarul oficial. kappa.social.ngo@gmail.com</div>
+
+  <div style="margin-top:44px;background:var(--off-wh);border-radius:12px;padding:24px;border:1px solid var(--gray-lt)">
+    <div class="sl2">Finanțe</div>
+    <div class="st" style="font-size:20px">Situația financiară</div>
+    <p style="font-size:13px;color:var(--gray-dk);margin-top:10px;line-height:1.7;max-width:520px">KAPPA-SOCIAL nu a primit granturi externe în 2025–2026. Activitatea susținută din resurse proprii. Orice grant obținut se publică cu buget detaliat și cheltuieli reale.</p>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:14px">
+      <div><div style="font-size:11px;color:var(--gray)">Granturi aplicate 2026</div><div style="font-size:20px;font-weight:700;color:var(--navy);font-family:var(--serif)">2</div></div>
+      <div><div style="font-size:11px;color:var(--gray)">EcoContact PGM5</div><div style="font-size:20px;font-weight:700;color:var(--navy);font-family:var(--serif)">Nepromovat</div></div>
+      <div><div style="font-size:11px;color:var(--gray)">UNDP Call</div><div style="font-size:20px;font-weight:700;color:var(--navy);font-family:var(--serif)">În evaluare</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PRESA -->
+<section id="press">
+<div class="ph"><div class="phi">
+  <div class="pe">Pentru jurnaliști</div>
+  <h2>Dosare gata de publicat.<br>Date verificabile.</h2>
+  <p>Nu trimitem comunicate goale. Oferim context, cifre, documente și surse. Tot ce ai nevoie pentru un material solid.</p>
+</div></div>
+<div class="con">
+  <div class="ibox">📞 Contact presă: <strong>kappa.social.ngo@gmail.com</strong> · <strong>+373 60 147 147</strong> — Răspuns în max 24h</div>
+  <div style="margin-top:28px">
+    <div class="sl2">Dosare disponibile</div>
+    <div class="st">Subiecte cu date gata de utilizat</div>
+    <div style="margin-top:20px">
+      <div class="pk">
+        <h4>📁 Dezastrul la indigo — Pârâul Durlești</h4>
+        <p>Patru unghiuri de investigație: sănătate publică (Lacul Valea Morilor), paradox financiar (7,7 mln MDL fără impact), izolare economică, ping-pong instituțional. Include date oficiale, înregistrări audio, documente obținute prin petiții.</p>
+        <span class="pkb" onclick="alert('Solicită dosar complet: kappa.social.ngo@gmail.com')">Solicită dosar complet</span>
+        <span class="pkb sec" onclick="showPage('transparency')">Vezi registrul demersurilor</span>
+      </div>
+      <div class="pk">
+        <h4>📊 Datele poluării — Lacul Valea Morilor</h4>
+        <p>Confirmare audio dr. Tudor Puiu (CSP Chișinău): Primăria refuză intenționat statutul de „zonă de agrement" pentru a evita monitorizarea. Date SA Apă-Canal: 49,3% din gospodăriile riverane — fără canalizare.</p>
+        <span class="pkb" onclick="alert('Contact: kappa.social.ngo@gmail.com')">Solicită date</span>
+      </div>
+      <div class="pk">
+        <h4>🏗️ Construcții ilegale și risc hidrologic</h4>
+        <p>Cazul „Gonvaro-Con" (2019): blocuri 9 etaje fără autorizație, rețele strămutate abuziv. Schimbarea codurilor urbanistice fără PUZ agravează volumul apelor pluviale. Date și documente disponibile.</p>
+        <span class="pkb" onclick="alert('Contact: kappa.social.ngo@gmail.com')">Solicită date</span>
+      </div>
+    </div>
+
+    <div style="margin-top:36px">
+      <div class="sl2">Cifre cheie</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:14px">
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-size:18px;font-weight:700;color:var(--navy);font-family:var(--serif)">7.721.300 MDL</div><div style="font-size:11px;color:var(--gray);margin-top:3px">Cheltuiți 2020 — zero studii tehnice la dosar</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-size:18px;font-weight:700;color:var(--navy);font-family:var(--serif)">49,3%</div><div style="font-size:11px;color:var(--gray);margin-top:3px">Gospodării riverane fără canalizare (confirmat oficial)</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-size:18px;font-weight:700;color:var(--navy);font-family:var(--serif)">~20 cm</div><div style="font-size:11px;color:var(--gray);margin-top:3px">Capacitate reziduală sub poduri după lucrările 2020</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-size:18px;font-weight:700;color:var(--navy);font-family:var(--serif)">0</div><div style="font-size:11px;color:var(--gray);margin-top:3px">Studii ecologice la dosar (confirmat Pretura Buiucani)</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px">
+      <div class="sl2">Apariții media</div>
+      <div class="st" style="font-size:20px">Acoperire media</div>
+      <div class="ibox" style="margin-top:12px">Secțiune în actualizare continuă. Urmărești subiectul? Pagina Facebook BV 2.0 pentru notificări în timp real.</div>
+      <div class="wbox">📺 Ai realizat un material despre BV 2.0? Trimite-ne linkul pentru arhivă: kappa.social.ngo@gmail.com</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- COMUNITATE -->
+<section id="community">
+<div class="ph"><div class="phi">
+  <div class="pe">Pentru locuitorii din Buiucanii Vechi</div>
+  <h2>Informații practice<br>pentru comunitate</h2>
+  <p>Ești locuitor din zona Buiucanii Vechi? Această pagină îți oferă contacte utile, cum raportezi o problemă și cum te implici.</p>
+</div></div>
+<div class="con">
+  <div class="sl2">Ai o problemă?</div>
+  <div class="st">Cum acționezi</div>
+  <div class="ibox" style="margin-top:12px">Pârâul Durlești, un pod degradat, o clădire periculoasă, o stradă fără iluminat — orice problemă de infrastructură sau mediu din Buiucanii Vechi poate fi documentată și raportată oficial prin KAPPA-SOCIAL.</div>
+
+  <div class="ccg">
+    <div class="cc"><h4>📸 Raportează o problemă</h4><p>Fotografii cu data vizibilă, adresa exactă, descrierea situației. Trimite-ne pe email sau mesaj Facebook și o includem în dosarul oficial.</p><a href="mailto:kappa.social.ngo@gmail.com" class="ccl">Scrie-ne →</a></div>
+    <div class="cc"><h4>📋 Sesizare individuală</h4><p>Ai dreptul să trimiți sesizări direct la Pretura Buiucani, Primăria Chișinău sau IPM. Te ajutăm cu modelul de formulare corectă legal.</p><a href="mailto:kappa.social.ngo@gmail.com?subject=Model sesizare" class="ccl">Solicită model →</a></div>
+    <div class="cc"><h4>🤝 Devino voluntar</h4><p>Acțiuni de salubrizare, documentare foto, distribuire informații, participare la ședințe. Orice 2 ore/lună contribuie concret.</p><a href="mailto:kappa.social.ngo@gmail.com?subject=Voluntar BV 2.0" class="ccl">Înscrie-te →</a></div>
+    <div class="cc"><h4>📅 Acțiuni viitoare</h4><p>Evenimentele sunt anunțate pe pagina Facebook BV 2.0. Urmărește pagina pentru a fi primul informat.</p><a href="https://www.facebook.com/buiucanii.vechi.2.0" target="_blank" class="ccl">Facebook BV 2.0 →</a></div>
+  </div>
+
+  <div style="margin-top:44px">
+    <div class="sl2">Contacte utile</div>
+    <div class="st">Instituții relevante pentru zona ta</div>
+    <div style="overflow-x:auto;margin-top:16px">
+    <table class="tt">
+      <thead><tr><th>Instituție</th><th>Ce rezolvă</th><th>Contact</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Pretura Buiucani</strong></td><td>Domeniu public, străzi, spații verzi, sesizări locale</td><td><a href="https://preturabuiucani.md" target="_blank" style="color:var(--emerald)">preturabuiucani.md</a></td></tr>
+        <tr><td><strong>Primăria Chișinău</strong></td><td>Infrastructură majoră, buget, proiecte capitale</td><td><a href="https://chisinau.md" target="_blank" style="color:var(--emerald)">chisinau.md</a></td></tr>
+        <tr><td><strong>SA Apă-Canal Chișinău</strong></td><td>Canalizare, contracte, avarii rețea</td><td><a href="https://www.apacanalchisinau.md" target="_blank" style="color:var(--emerald)">apacanalchisinau.md</a></td></tr>
+        <tr><td><strong>Inspectoratul Protecția Mediului</strong></td><td>Poluare, deversări ilegale, sesizări ecologice</td><td>Sesizări online via gov.md</td></tr>
+        <tr><td><strong>IGSU — urgențe</strong></td><td>Inundații, situații de urgență</td><td>☎ 112</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div style="margin-top:36px;background:var(--navy-dk);border-radius:12px;padding:24px;color:white">
+    <div style="font-size:11px;font-weight:600;color:rgba(188,132,56,.8);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Cunoști istoria cartierului?</div>
+    <h3 style="font-family:var(--serif);font-size:20px;margin-bottom:8px">Ajută-ne să construim memoria colectivă</h3>
+    <p style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:14px">Fotografii vechi, povești, personaje locale, locuri dispărute — orice material contribuie la identitatea comunității. Le publicăm pe pagina Facebook cu creditul tău.</p>
+    <a href="mailto:kappa.social.ngo@gmail.com?subject=Material istoric Buiucanii Vechi" style="display:inline-block;background:var(--gold);color:var(--navy-dk);font-size:12px;font-weight:600;padding:8px 16px;border-radius:var(--r)">Trimite material →</a>
+  </div>
+</div>
+</section>
+
+<!-- LECTII -->
+<section id="lessons">
+<div class="ph"><div class="phi">
+  <div class="pe">Ghid pentru comunități</div>
+  <h2>Ce am învățat.<br>Ce a funcționat. Ce nu.</h2>
+  <p>Dacă vrei să construiești ceva similar în comunitatea ta, această pagină e pentru tine. Documentăm onest — succesele și eșecurile, în egală măsură.</p>
+</div></div>
+<div class="con">
+  <div class="ibox">Această secțiune se actualizează continuu după fiecare acțiune majoră — pozitivă sau negativă.</div>
+
+  <div style="margin-top:28px">
+    <div class="sl2">Lecții cheie</div>
+    <div class="st">Ce am învățat în 6 luni de BV 2.0</div>
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="ll"><div class="ll-ico">✅</div><h4>Conținutul emoțional organic bate reclama plătită</h4><p>Cel mai viral post (211k views, 0 lei): video cu câini maidanezi. Emoția imediată din viața de zi cu zi ajunge mai departe decât orice advocacy formal.</p><span class="llt llok">Funcționează</span><span class="llt llt2">Social media</span></div>
+      <div class="ll"><div class="ll-ico">⚠️</div><h4>Views nu se convertesc automat în urmăritori</h4><p>833k vizualizări, 1054 urmăritori. Problema: lipsa unui „motiv să rămâi". Soluția: seriale de conținut săptămânale cu titlu fix.</p><span class="llt llw">De rezolvat</span><span class="llt llt2">Social media</span></div>
+      <div class="ll"><div class="ll-ico">✅</div><h4>Documentele oficiale sunt arma cea mai puternică</h4><p>Confirmarea SA Apă-Canal (49,3% fără canalizare), Pretura (zero studii tehnice), înregistrarea audio CSP — mai multă forță decât orice petiție.</p><span class="llt llok">Funcționează</span><span class="llt llt2">Advocacy</span></div>
+      <div class="ll"><div class="ll-ico">⚠️</div><h4>Grant EcoContact PGM5 — nepromovat</h4><p>Lipsa unui track record de grant anterior și echipă formalizată contează. Feedback solicitat, analizat. Aplicăm din nou cu modificări.</p><span class="llt llw">Eșec documentat</span><span class="llt llt2">Fundraising</span></div>
+      <div class="ll"><div class="ll-ico">✅</div><h4>Persistența funcționează — inspecția IPM</h4><p>De la sesizare scrisă la inspecție fizică cu IPM pe teren: 6 săptămâni și mai multe solicitări. Prezența continuă forțează reacția instituțională.</p><span class="llt llok">Funcționează</span><span class="llt llt2">Advocacy</span></div>
+      <div class="ll"><div class="ll-ico">⚠️</div><h4>Instagram — 32 posturi, views maxim 16</h4><p>Fără urmăritori de bază și hashtag strategy, Instagram e pagină fantomă. Prioritizează o platformă înainte de a le face pe toate.</p><span class="llt llw">Greșeală evitabilă</span><span class="llt llt2">Social media</span></div>
+    </div>
+
+    <div style="margin-top:36px">
+      <div class="sl2">Instrumente recomandate</div>
+      <div class="st">Ce folosim și ce recomandăm</div>
+      <div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-weight:600;color:var(--navy);margin-bottom:5px;font-size:13px">📱 Facebook Insights</div><div style="font-size:12px;color:var(--gray-dk);line-height:1.6">Analizează ce posturi merg și de ce. Exportă CSV lunar. Gratuit.</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-weight:600;color:var(--navy);margin-bottom:5px;font-size:13px">🎨 Canva for Nonprofits</div><div style="font-size:12px;color:var(--gray-dk);line-height:1.6">Design profesional gratuit pentru ONG-uri. Aplici pe canva.com/nonprofits.</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-weight:600;color:var(--navy);margin-bottom:5px;font-size:13px">📁 Google Workspace Nonprofits</div><div style="font-size:12px;color:var(--gray-dk);line-height:1.6">Gmail, Drive, Docs, Meet — gratuit pentru ONG-uri înregistrate cu site.</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-weight:600;color:var(--navy);margin-bottom:5px;font-size:13px">🤖 Claude AI (Anthropic)</div><div style="font-size:12px;color:var(--gray-dk);line-height:1.6">Redactare demersuri, strategii, analiză date, conținut. Diminuează nevoia de echipă mare.</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-weight:600;color:var(--navy);margin-bottom:5px;font-size:13px">📍 Google Maps (My Maps)</div><div style="font-size:12px;color:var(--gray-dk);line-height:1.6">Hărți personalizate pentru documentare teren și marcarea problemelor. Gratuit.</div></div>
+        <div style="background:var(--off-wh);border-radius:var(--r);padding:14px;border:1px solid var(--gray-lt)"><div style="font-weight:600;color:var(--navy);margin-bottom:5px;font-size:13px">📝 Google Forms</div><div style="font-size:12px;color:var(--gray-dk);line-height:1.6">Sondaje comunitare, colectare sesizări, înregistrare voluntari. Gratuit.</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;background:var(--off-wh);border-radius:12px;padding:24px;border:1px solid var(--gray-lt)">
+      <div class="sl2">Ai întrebări?</div>
+      <div class="st" style="font-size:20px">Scrie-ne</div>
+      <p style="font-size:13px;color:var(--gray-dk);margin-top:10px;line-height:1.7;max-width:500px">Cum formulezi o sesizare, cum construiești o pagină Facebook, cum aplici la un grant — răspunsuri oneste, din experiență directă.</p>
+      <a href="mailto:kappa.social.ngo@gmail.com?subject=Întrebare ghid comunități" style="display:inline-block;background:var(--navy);color:white;font-size:12px;font-weight:600;padding:9px 18px;border-radius:var(--r);margin-top:14px">Scrie-ne →</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="ph"><div class="phi">
+  <div class="pe">Contact</div>
+  <h2>Hai să construim<br>împreună.</h2>
+  <p>Voluntar, partener, finanțator sau jurnalist — orice formă de implicare contează.</p>
+</div></div>
+<div class="con">
+  <div class="cong">
+    <div>
+      <div class="sl2">Date de contact</div>
+      <div class="st" style="font-size:22px">Cum ne găsești</div>
+      <div style="margin-top:20px">
+        <div class="cit"><div class="cico">📧</div><div><div class="clb">Email</div><div class="cv"><a href="mailto:kappa.social.ngo@gmail.com">kappa.social.ngo@gmail.com</a></div></div></div>
+        <div class="cit"><div class="cico">📱</div><div><div class="clb">Telefon / WhatsApp</div><div class="cv"><a href="tel:+37360147147">+373 60 147 147</a></div></div></div>
+        <div class="cit"><div class="cico">📍</div><div><div class="clb">Adresă juridică</div><div class="cv">str. Nicolae H. Costin 63/5 ap. 22, MD-2071, Chișinău</div></div></div>
+        <div class="cit"><div class="cico">📘</div><div><div class="clb">Facebook BV 2.0</div><div class="cv"><a href="https://www.facebook.com/buiucanii.vechi.2.0" target="_blank">buiucanii.vechi.2.0</a></div></div></div>
+        <div class="cit"><div class="cico">📘</div><div><div class="clb">Facebook KAPPA-SOCIAL</div><div class="cv"><a href="https://www.facebook.com/kappa.social" target="_blank">kappa.social</a></div></div></div>
+      </div>
+      <div style="margin-top:24px;background:var(--navy);border-radius:12px;padding:20px;color:white">
+        <div style="font-size:11px;font-weight:600;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px">Voluntariat</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:12px">Nu avem cerințe de expertiză — avem nevoie de oameni motivați. 2 ore/lună contează.</p>
+        <a href="mailto:kappa.social.ngo@gmail.com?subject=Voluntar KAPPA-SOCIAL" style="display:inline-block;background:var(--gold);color:var(--navy-dk);font-size:12px;font-weight:600;padding:8px 16px;border-radius:var(--r)">Scrie-ne →</a>
+      </div>
+    </div>
+    <div>
+      <div class="sl2">Formular</div>
+      <div class="st" style="font-size:22px">Scrie-ne</div>
+      <form style="margin-top:20px" onsubmit="handleForm(event)">
+        <div class="fg"><label>Nume și prenume *</label><input type="text" required placeholder="Numele tău"></div>
+        <div class="fg"><label>Email *</label><input type="email" required placeholder="email@example.com"></div>
+        <div class="fg"><label>Subiect</label>
+          <select>
+            <option value="">— Selectează —</option>
+            <option>Voluntar acțiuni de teren</option>
+            <option>Suport comunicare / social media</option>
+            <option>Expertiză juridică / tehnică</option>
+            <option>Parteneriat organizațional</option>
+            <option>Finanțare / grant</option>
+            <option>Jurnalist / presă</option>
+            <option>Locuitor din Buiucanii Vechi</option>
+            <option>Întrebare despre metodologie</option>
+            <option>Altceva</option>
+          </select>
+        </div>
+        <div class="fg"><label>Mesaj *</label><textarea required placeholder="Descrie cum vrei să te implici sau ce problemă ai observat..."></textarea></div>
+        <p class="fnote">Datele nu sunt partajate cu terțe părți.</p>
+        <button type="submit" class="bp" style="width:100%;margin-top:12px">Trimite mesajul</button>
+      </form>
+      <div id="form-success" style="display:none;margin-top:14px;background:var(--em-lt);border-radius:var(--r);padding:14px;color:var(--emerald);font-size:13px;font-weight:500;border:1px solid rgba(45,106,79,.2)">✓ Mesajul a fost trimis! Răspundem în max 48h.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="fi">
+  <div class="fbrand">
+    <div class="lw" onclick="showPage('home')">
+      <div class="lm">sk</div>
+      <div><div class="lt">KAPPA-SOCIAL</div><div class="ls">Asociație Obștească</div></div>
+    </div>
+    <p class="ftag">Proiecte pilot cu impact civic, cultural și comunitar în Moldova. Transparență totală. Model replicabil.</p>
+  </div>
+  <div class="fc">
+    <h5>Organizație</h5>
+    <a onclick="showPage('home')">Acasă</a>
+    <a onclick="showPage('about')">Despre</a>
+    <a onclick="showPage('projects')">Proiecte</a>
+    <a onclick="showPage('transparency')">Transparență</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </div>
+  <div class="fc">
+    <h5>Resurse</h5>
+    <a onclick="showPage('bv20')">BV 2.0 — Proiect activ</a>
+    <a onclick="showPage('press')">Pentru presă</a>
+    <a onclick="showPage('community')">Comunitate BV</a>
+    <a onclick="showPage('lessons')">Lecții învățate</a>
+  </div>
+  <div class="fc">
+    <h5>Social media</h5>
+    <a href="https://www.facebook.com/buiucanii.vechi.2.0" target="_blank">FB — BV 2.0</a>
+    <a href="https://www.facebook.com/kappa.social" target="_blank">FB — KAPPA-SOCIAL</a>
+    <a href="https://www.facebook.com/cinemaliga" target="_blank">FB — CINEMALIGA</a>
+    <a href="mailto:kappa.social.ngo@gmail.com">Email</a>
+  </div>
+</div>
+<div class="fb">
+  <div class="fleg">© 2026 KAPPA-SOCIAL A.O. · kappa-social.org · Chișinău, Moldova</div>
+  <div class="fidn">IDNO 1012620002361</div>
+</div>
+</footer>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+  const m={home:0,about:1,projects:2,bv20:3,transparency:4,press:5,community:6,lessons:7,contact:8};
+  const lnk=document.querySelectorAll('nav a');
+  if(lnk[m[id]])lnk[m[id]].classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('mnav').classList.remove('open');
+}
+function toggleMenu(){document.getElementById('mnav').classList.toggle('open')}
+function setLang(lang,e){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  if(lang==='ru')alert('Версия на русском языке находится в разработке.');
+  if(lang==='en')alert('English version is in progress.');
+}
+function handleForm(e){
+  e.preventDefault();
+  document.getElementById('form-success').style.display='block';
+  e.target.style.display='none';
+}
+</script>
+</body>
+</html>
