@@ -1,0 +1,4 @@
+# GitHub Pages configuration
+# Redirects non-www to www automatically
+url: "https://www.kappa-social.org"
+baseurl: ""
